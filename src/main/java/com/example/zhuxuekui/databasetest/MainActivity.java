@@ -103,8 +103,8 @@ public class MainActivity extends Activity {
 
                 try {
                     db.delete("Book",null,null);
-                    if(true)
-                        throw new NullPointerException();//模拟中途中断，旧数据无法删除，有点像sql里面的回滚机制
+//                    if(true)
+//                        throw new NullPointerException();//模拟中途中断，旧数据无法删除，有点像sql里面的回滚机制
                     ContentValues values = new ContentValues();
                     values.put("name", "Game of Thrones");
                     values.put("author", "George Martin");
